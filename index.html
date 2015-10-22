@@ -1,1 +1,102 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Theme Template for Bootstrap</title>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-formhelpers.js"></script>
+
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/bootstrap-formhelpers.css" rel="stylesheet" media="screen">
+    
+    <!--  <script src="factions.json"></script> -->
+    <script src="js/index.js"></script>
+
+  </head>
+
+  <body role="document">
+    <div class="container theme-showcase" role="main">
+      
+      <div class="jumbotron">
+        <h1>Theme example</h1>
+        <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
+      </div>
+
+      <div id="inputs" class="row">
+        <div class="col-xs-2">
+          <input  id="numOfPlayers" type="text" value="5" class="form-control bfh-number" data-min="5" data-max="25">
+        </div>
+
+        <div class="col-xs-2 dropdown">
+          <button id="numOfFactions" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            Number of Factions
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="factions" class="row container">
+        <h2>Factions Pool</h2>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#Gen1">Gen 1</a></li>
+          <li><a href="#Gen2">Gen 2</a></li>
+          <li><a href="#Gen3">Gen 3</a></li>
+          <li><a href="#Gen4">Gen 4</a></li>
+          <li><a href="#Gen5">Gen 5</a></li>    
+        </ul>
+
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <h3>HOME</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div id="Gen1" class="tab-pane fade">
+            <h3>Gen 1</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div id="Gen2" class="tab-pane fade">
+            <h3>Gen 2</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+          <div id="Gen3" class="tab-pane fade">
+            <h3>Gen 3</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+          <div id="Gen4" class="tab-pane fade">
+            <h3>Gen 4</h3>
+            <p>veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+          <div id="Gen5" class="tab-pane fade">
+            <h3>Gen 5</h3>
+            <p>illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+        </div>
+          <hr>
+          <p class="act"><b>Active Tab</b>: <span></span></p>
+          <p class="prev"><b>Previous Tab</b>: <span></span></p>
+      </div>
+
+
+    </div>
+
+
+  </body>
+</html>
