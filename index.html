@@ -29,23 +29,29 @@
   </head>
 
   <body role="document">
-    <section data-parallax="scroll" data-image-src="assets/cover.jpg" data-position="0, -190"><section>
+    <section data-parallax="scroll" data-image-src="assets/test.png" data-position="0, -260"><section>
     <div class="container theme-showcase" role="main">
       <div id="content">
+        <div>
+          <img id="logo" src="assets/smashup-logo.png" alt="Get Smashed!">
+        </div>
+
         <div id="inputs" class="row">
-          <div class="col-xs-2">
+          <div style="float:left;" class="col-xs-2">
+            <label for="numOfPlayers">Players:</label>
             <input id="numOfPlayers" type="number" value="2" class="form-control bfh-number" min="2" max="6">
           </div>
 
-          <div class="col-xs-2">
-            <input  id="numOfFactions" type="number" value="2" class="form-control bfh-number" min="2" max="4">
+          <div style="float:left;" class="col-xs-2">
+            <label for="numOfFactions">Factions:</label>
+            <input id="numOfFactions" name="numOfFactions" type="number" value="2" class="form-control" min="2" max="4">
           </div>
 
           <div class="col-xs-6">
           </div>
           
           <div class="col-xs-2">
-            <button id="deal-btn" type="button" class="btn btn-success"> Deal!</button>
+            <button id="deal-btn" type="button" class="btn btn-success"> <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>  Deal!</button>
           </div>
         </div>
 
