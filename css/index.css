@@ -26,7 +26,7 @@
    top: 50%;
 }
 #inputs{
-   padding-top: 30px;
+   padding-top: 46px;
    background-color: white;
    border-top-left-radius: 18px;
    border-top-right-radius: 18px;   
@@ -57,7 +57,7 @@
    margin-top: 10px;
    margin-left: 10px;
    margin-right: 10px;
-   height: 150px; 
+   height: 100px; 
    line-height: 150px;
    text-align: center;
    font: normal 30px Boogaloo-Regular !important;
@@ -79,8 +79,9 @@ a.list-group-item, button.list-group-item {
 
 #content{
     z-index: 1;
-    padding-top: 130px;\
+    padding-top: 100px;\
     position: relative;
+    opacity: 0.96;
 }
 
 .panel-tangy > .panel-heading {
@@ -89,14 +90,9 @@ a.list-group-item, button.list-group-item {
     border-color: #D4804F;
 }
 
-.panel-royal {
-   border-color: #AC72D0;
-}
-
 .panel-royal > .panel-heading {
     color: #570D73;
     background-color: #AC72D0;
-    border-color: #AC72D0;
 }
 
 #logo{
@@ -123,8 +119,6 @@ h2, label{
   height: 80px;
   font: normal 30px Boogaloo-Regular !important;
 }
-
-
 
 
 /* Faction Card Colours */
