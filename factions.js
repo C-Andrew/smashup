@@ -5,29 +5,29 @@ var dealt_factions = [];
 
 var expansions = {
     "gen1" : {
-      "name" : "Core",
+      "name" : "Base Set",
       "gen" : "Gen1",
       "list" : ["Robots", "Zombies", "Pirates", "Aliens", "Dinosaurs", "Ninjas", "Tricksters", "Wizards", "Geeks"]
     },
     "gen2" : {
       "name" : "Awesome Level 9000",
       "gen" : "Gen2",
-      "list" : ["Bear Cavalry", "Ghosts", "Killer Plants", "Steampunks"]
+      "list" : ["Bear Cavalry", "Ghosts", "Killer Plants", "Steampunk"]
     },
     "gen3" : {
       "name" : "Science Fiction Double Feature",
       "gen" : "Gen3",
-      "list" : ["Cyborg Apes", "Shapeshifters", "Super Spies", "Time Travelers"]
+      "list" : ["Cyborg Apes", "Shape Shifters", "Super Spies", "Time Travelers"]
     },
     "gen4" : {
       "name" : "Monster Smash",
       "gen" : "Gen4",
-      "list" : ["Giant Ants", "Mad Scientists", "Vampires", "Werewolves "]
+      "list" : ["Giant Ants", "Mad Scientists", "Vampires", "Werewolves"]
     },
     "gen5" : {
       "name" : "Pretty Pretty Smash Up",
       "gen" : "Gen5",
-      "list" : ["Fairies", "Kitty Cats", "Mythic Horses", "Princesses "]
+      "list" : ["Fairies", "Kitty Cats", "Mythic Horses", "Princesses"]
     }
 };
 

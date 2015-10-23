@@ -1,7 +1,6 @@
 @font-face{
     font-family: "Boogaloo-Regular";
     src: url('fonts/Boogaloo-Regular.otf'),
-    url('fonts/Boogaloo-Regular.otf'); /* IE */
 }
 
 
@@ -27,7 +26,7 @@
    top: 50%;
 }
 #inputs{
-   padding-top: 15px;
+   padding-top: 30px;
    background-color: white;
    border-top-left-radius: 18px;
    border-top-right-radius: 18px;   
@@ -54,16 +53,28 @@
    padding-right: 15px;
 }
 
-.well.well-sm.col-sm-3{
+.list-group-item{
    margin-top: 10px;
    margin-left: 10px;
    margin-right: 10px;
-   width: 120px;
    height: 150px; 
+   line-height: 150px;
+   text-align: center;
+   font: normal 30px Boogaloo-Regular !important;
+   color: #ECECEC;
+}
+
+a.list-group-item, button.list-group-item {
+    color: #ECECEC;
+}
+
+.list-group-item.removed {
+  opacity: 0.4;
+  color: #000000;
 }
 
 .tab-pane {
-   padding-left: 20px;
+   padding-left: 5px;
 }
 
 #content{
@@ -94,7 +105,7 @@
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  left: 35%;
+  left: 34%;
   top: -1%;
 }
 
@@ -113,4 +124,88 @@ h2, label{
   font: normal 30px Boogaloo-Regular !important;
 }
 
+
+
+
+/* Faction Card Colours */
+#Robots{ 
+  background-color: #343442;
+}
+#Zombies{ 
+  background-color: #488A4A;
+}
+#Pirates{ 
+  background-color: #AD2424;
+}
+#Aliens{ 
+  background-color: #9534A7;
+}
+#Dinosaurs{ 
+  background-color: #FFBC00;
+}
+#Ninjas{ 
+  background-color: #101D7D;
+}
+#Tricksters{ 
+  background-color: #3ACC37;
+}
+#Wizards{ 
+  background-color: #4A78FB;
+}
+#Geeks{ 
+  background-color: #000000;
+}
+/**************************/
+#BearCavalry{ 
+  background-color: #461B1B;
+}
+#Ghosts{ 
+  background-color: #09A092;
+}
+#KillerPlants{ 
+  background-color: #19A009;
+}
+#Steampunk{ 
+  background-color: #1A4C80;
+}
+/**************************/
+#CyborgApes{ 
+  background-color: #D2C31E;
+}
+#ShapeShifters{ 
+  background-color: #D21E9B;
+}
+#SuperSpies{ 
+  background-color: #DC6E44;
+}
+#TimeTravelers{ 
+  background-color: #0BCA9E;
+}
+/**************************/
+#GiantAnts{ 
+  background-color: #617A90;
+}
+#MadScientists{ 
+  background-color: #4A296F;
+}
+#Vampires{ 
+  background-color: #D41A1A;
+}
+#Werewolves{ 
+  background-color: #315CA9;
+}
+/**************************/
+#Fairies{ 
+  background-color: #B95BD8;
+}
+#KittyCats{ 
+  background-color: #5F3034;
+}
+#MythicHorses{ 
+  background-color: #4C1271;
+}
+#Princesses{ 
+  background-color: #5B7CD8;
+}
+/**************************/
 

@@ -31,24 +31,33 @@ $(document).ready(function(){
       $.each(val.list, function(){
         var faction_name = this.valueOf();
         var faction_id = faction_name.replace(/ /g,'');
-        var $div = $("<div>", {
-          id: faction_id, 
-          class: "well well-sm col-sm-3",
+        var $a = $("<a>", {
+          id: faction_id,
+          class: "list-group-item",
           html: faction_name
+        })
+
+        var $div = $("<div>", {
+          class: "col-sm-2",
+          html: $a
         });
+
+
 
         $div.click(function(){
           console.log("clicked");
-          var hasFaction = available_factions.indexOf(faction_id);
+          var hasFaction = available_factions.indexOf(faction_name);
           if(hasFaction > -1){
+            $("#" + faction_id).addClass("removed");
             available_factions.splice(hasFaction, 1);
           } else {
             available_factions.push(faction_id);
+            $("#" + faction_id).removeClass("removed");
           }
         });
 
         $("#" + val.gen).append($div);
-        available_factions.push(faction_id);
+        available_factions.push(faction_name);
       })  
     });
 
