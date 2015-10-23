@@ -19,9 +19,62 @@
    right: 10px;
    top: 50%;
 }
+#inputs{
+   padding-top: 15px;
+   background-color: white;
+   border-top-left-radius: 18px;
+   border-top-right-radius: 18px;   
+   border-left: 2px solid #000000;
+   border-right: 2px solid #000000;
+   border-top: 2px solid #000000;
+}
 
 #factions{
+   background-color: white;
    padding-left: 15px;
    padding-right: 15px;
    padding-top: 75px;
+
+   border-bottom-left-radius: 18px;
+   border-bottom-right-radius: 18px;   
+   border-left: 2px solid #000000;
+   border-right: 2px solid #000000;
+   border-bottom: 2px solid #000000;
+}
+
+#players{
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.well.well-sm.col-sm-3{
+   margin-top: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+   width: 120px;
+   height: 150px;  
+}
+
+.tab-pane {
+   padding-left: 20px;
+}
+
+#content{
+    padding-top: 200px;
+}
+
+.panel-tangy > .panel-heading {
+    color: #54301A;
+    background-color: #D4804F;
+    border-color: #D4804F;
+}
+
+.panel-royal {
+   border-color: #AC72D0;
+}
+
+.panel-royal > .panel-heading {
+    color: #570D73;
+    background-color: #AC72D0;
+    border-color: #AC72D0;
 }
