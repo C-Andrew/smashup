@@ -105,7 +105,16 @@ $(document).ready(function(){
 
     }); 
 
+    $( "#numOfFactions" ).change(function() {
+      if($("#numOfFactions").val() > 4){
+        $("#numOfFactions").val(4);
+      }
+    });
+
     $( "#numOfPlayers" ).change(function() {
+      if($("#numOfPlayers").val() > 6){
+        $("#numOfPlayers").val(6);
+      }
       switch(parseInt($("#numOfPlayers").val())){
         case 2:
           $('#player2').removeClass('hide');
