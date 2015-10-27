@@ -60,7 +60,6 @@
 
 a.list-group-item, button.list-group-item {
     color: #ECECEC;
-    padding-top: 16%;
 }
 
 .list-group-item.removed {
@@ -126,30 +125,39 @@ h2, label{
 /* Faction Card Colours */
 #Robots{ 
   background-color: #343442;
+  padding-top: 30px;
 }
 #Zombies{ 
   background-color: #488A4A;
+  padding-top: 30px;
 }
 #Pirates{ 
   background-color: #AD2424;
+  padding-top: 30px;
 }
 #Aliens{ 
   background-color: #9534A7;
+  padding-top: 30px;
 }
 #Dinosaurs{ 
   background-color: #FFBC00;
+  padding-top: 30px;
 }
 #Ninjas{ 
   background-color: #101D7D;
+  padding-top: 30px;
 }
 #Tricksters{ 
   background-color: #3ACC37;
+  padding-top: 30px;
 }
 #Wizards{ 
   background-color: #4A78FB;
+  padding-top: 30px;
 }
 #Geeks{ 
   background-color: #000000;
+  padding-top: 30px;
 }
 /**************************/
 #BearCavalry{ 
@@ -157,12 +165,14 @@ h2, label{
 }
 #Ghosts{ 
   background-color: #09A092;
+  padding-top: 30px;
 }
 #KillerPlants{ 
   background-color: #19A009;
 }
 #Steampunk{ 
   background-color: #1A4C80;
+  padding-top: 30px;
 }
 /**************************/
 #CyborgApes{ 
@@ -173,6 +183,7 @@ h2, label{
 }
 #SuperSpies{ 
   background-color: #DC6E44;
+  padding-top: 30px;
 }
 #TimeTravelers{ 
   background-color: #0BCA9E;
@@ -180,28 +191,34 @@ h2, label{
 /**************************/
 #GiantAnts{ 
   background-color: #617A90;
+  padding-top: 30px;
 }
 #MadScientists{ 
   background-color: #4A296F;
 }
 #Vampires{ 
   background-color: #D41A1A;
+  padding-top: 30px;
 }
 #Werewolves{ 
   background-color: #315CA9;
+  padding-top: 30px;
 }
 /**************************/
 #Fairies{ 
   background-color: #B95BD8;
+  padding-top: 30px;
 }
 #KittyCats{ 
   background-color: #5F3034;
+  padding-top: 30px;
 }
 #MythicHorses{ 
   background-color: #4C1271;
 }
 #Princesses{ 
   background-color: #5B7CD8;
+  padding-top: 30px;
 }
 /**************************/
 
