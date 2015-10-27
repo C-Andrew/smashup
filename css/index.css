@@ -229,4 +229,10 @@ h3 {
   padding-top: 30px;
 }
 /**************************/
+#disable-Gen1, #disable-Gen2, #disable-Gen3,
+#disable-Gen4, #disable-Gen5, #disable-Gen6 { 
+  background-color: #778098;
+  color: #000;
+  padding-top: 30px;
+}
 

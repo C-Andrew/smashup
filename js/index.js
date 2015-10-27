@@ -15,6 +15,46 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 
 });
 
+function addDisableGenButton(gen, factions){
+  var $a = $("<a>", {
+    id: "disable-" + gen,
+    "data-enabled": true,
+    class: "list-group-item",
+    html: "Disable"
+  })
+  var $div = $("<div>", {
+    class: "col-sm-2",
+    html: $a
+  });
+
+  $div.click(function(){
+    var enabled = $.parseJSON($a.attr("data-enabled"));
+    $.each(factions, function(){
+      var faction_id = this.valueOf().replace(/ /g,'');
+      console.log(enabled);
+      if(enabled){  
+        $("#" + faction_id).addClass("removed");
+      } else {
+        $("#" + faction_id).removeClass("removed");  
+      }
+    });
+
+    if(enabled){  
+      console.log($a.attr("data-enabled"));
+      console.log("enabled so disable");
+      $a.attr("data-enabled", false);
+      $a.html("Enable");
+    } else {
+      console.log("disabled so enable");
+      $a.attr("data-enabled", true);
+      $a.html("Disable");
+    }
+    
+  });
+
+  $("#" + gen).append($div);
+};
+
 $(document).ready(function(){
     // For every entry in factions, create a tab.
     $.each(expansions, function(gen, val) {
@@ -58,14 +98,15 @@ $(document).ready(function(){
 
         $("#" + val.gen).append($div);
         available_factions.push(faction_name);
-      })  
+      })
+      
+      addDisableGenButton(val.gen, val.list);
     });
 
     $('#faction-list a[href="#Gen1"]').tab('show');
 
     $(".nav-tabs a").click(function(){
         $(this).tab('show');
-        console.log("hello");
     });
     $('.nav-tabs a').on('shown.bs.tab', function(event){
         // var x = $(event.target).text();         // active tab
@@ -86,8 +127,6 @@ $(document).ready(function(){
 
       // Deal factions to all players
       for(var x = 1; x <= numOfPlayers; x++){
-        console.log(dealt_factions);
-        console.log("Player " + x + ":");
         for(var y = 0; y < numOfFactions; y++){
           var index = getRandomInt(0, dealt_factions.length-1);
           var hand = "hand" + x;
@@ -97,7 +136,6 @@ $(document).ready(function(){
 
           // Add faction to player's hand
           $("#" + hand).append($p);
-          console.log(dealt_factions[index]);
           // Remove faction from factions
           dealt_factions.splice(index, 1);
         }
