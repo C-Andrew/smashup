@@ -58,6 +58,33 @@ function addDisableGenButton(gen, factions){
   $("#" + gen).append($div);
 };
 
+function mulligan(e){
+  e = e || window.event;
+  var target = e.target || e.srcElement;
+  var hand = $(target).parent().parent().parent().children().get(1).id;
+
+  $.each($(target).parent().parent().siblings().children(), function(){ 
+      dealt_factions.push(this.innerHTML); 
+  });
+
+  // Clear my dealt factions
+  $("#" + hand).empty();
+
+  for(var y = 0; y < $("#numOfFactions").val(); y++){
+      var index = getRandomInt(0, dealt_factions.length-1);
+      var $p = $("<p>", {
+        html: dealt_factions[index]
+      });
+
+      // Add faction to player's hand
+      $("#" + hand).append($p);
+
+      // Remove faction from factions
+      dealt_factions.splice(index, 1);
+  }
+  console.log(dealt_factions);
+};
+
 $(document).ready(function(){
     // For every entry in factions, create a tab.
     $.each(expansions, function(gen, val) {
