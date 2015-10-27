@@ -1,5 +1,5 @@
 # smashup
-Smash Up Faction Picker
+[Smash Up: Faction Picker](http://c-andrew.github.io/smashup/)
 
 Todo List:
 
