@@ -116,6 +116,14 @@ h2, label{
     font: normal 56px boogalooregular !important;
 }
 
+p {
+  font: normal 20px boogalooregular !important;
+}
+
+h3 {
+  font: normal 20px boogalooregular !important;
+}
+
 #deal-btn{
   width:100%;
   height: 80px;

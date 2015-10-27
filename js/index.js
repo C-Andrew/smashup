@@ -117,7 +117,6 @@ $(document).ready(function(){
       }
       switch(parseInt($("#numOfPlayers").val())){
         case 2:
-          $('#player2').removeClass('hide');
           $('#player3').addClass('hide');
           $('#player4').addClass('hide');
           $('#player5').addClass('hide');
@@ -130,15 +129,21 @@ $(document).ready(function(){
           $('#player6').addClass('hide');
           break;
         case 4:
+          $('#player3').removeClass('hide');
           $('#player4').removeClass('hide');
           $('#player5').addClass('hide');
           $('#player6').addClass('hide');
           break;
         case 5:
+          $('#player3').removeClass('hide');
+          $('#player4').removeClass('hide');
           $('#player5').removeClass('hide');
           $('#player6').addClass('hide');
           break;
         case 6:
+          $('#player3').removeClass('hide');
+          $('#player4').removeClass('hide');
+          $('#player5').removeClass('hide');
           $('#player6').removeClass('hide');
           break;
         default: 
