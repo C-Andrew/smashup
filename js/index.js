@@ -30,12 +30,15 @@ function addDisableGenButton(gen, factions){
   $div.click(function(){
     var enabled = $.parseJSON($a.attr("data-enabled"));
     $.each(factions, function(){
+      var hasFaction = available_factions.indexOf(this.valueOf());
       var faction_id = this.valueOf().replace(/ /g,'');
       console.log(enabled);
       if(enabled){  
         $("#" + faction_id).addClass("removed");
+        available_factions.splice(hasFaction, 1);
       } else {
-        $("#" + faction_id).removeClass("removed");  
+        $("#" + faction_id).removeClass("removed");
+        available_factions.push(faction_id);
       }
     });
 
@@ -91,8 +94,8 @@ $(document).ready(function(){
             $("#" + faction_id).addClass("removed");
             available_factions.splice(hasFaction, 1);
           } else {
-            available_factions.push(faction_id);
             $("#" + faction_id).removeClass("removed");
+            available_factions.push(faction_id);
           }
         });
 
