@@ -57,6 +57,7 @@
    margin-left: 10px;
    margin-right: 10px;
    height: 100px; 
+   width: 145px;
    text-align: center;
    font: normal 30px boogalooregular !important;
    color: #ECECEC;
@@ -67,6 +68,20 @@ a.list-group-item, button.list-group-item {
     color: #ECECEC;
 }
 
+/*@media (min-width: 768px) {
+  .list-group-item{
+     width: 145px;
+     margin-top: 10px;
+     margin-left: 10px;
+     margin-right: 10px;
+     height: 100px; 
+     text-align: center;
+     font: normal 30px boogalooregular !important;
+     color: #ECECEC;
+     border-radius: 4px;
+  }
+}
+*/
 .list-group-item.removed {
   opacity: 0.4;
   color: #000000;
