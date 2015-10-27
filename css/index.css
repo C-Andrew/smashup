@@ -79,6 +79,14 @@ a.list-group-item, button.list-group-item {
     opacity: 0.96;
 }
 
+#bootstrap-overrides {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 87%;
+}
+
 .panel-tangy > .panel-heading {
     color: #54301A;
     background-color: #D4804F;
