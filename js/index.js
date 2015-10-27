@@ -108,7 +108,9 @@ $(document).ready(function(){
 
     $('#faction-list a[href="#Gen1"]').tab('show');
 
-    $(".nav-tabs a").click(function(){
+    $(".nav-tabs a").click(function(e){
+        e.preventDefault();
+        e.stopImmediatePropagation();
         $(this).tab('show');
     });
     $('.nav-tabs a').on('shown.bs.tab', function(event){
