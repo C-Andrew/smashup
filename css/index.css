@@ -65,6 +65,7 @@ a.list-group-item, button.list-group-item {
 .list-group-item.removed {
   opacity: 0.4;
   color: #000000;
+  border-color: #000000;
 }
 
 .tab-pane {
