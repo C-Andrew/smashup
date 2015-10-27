@@ -19,6 +19,7 @@
    right: 10px;
    top: 50%;
 }
+
 #inputs{
    padding-top: 46px;
    background-color: white;
@@ -51,37 +52,39 @@
    border-right: 2px solid #000000;
    border-bottom: 2px solid #000000;
 }
+@media (min-width: 1025px) {
+  .list-group-item{
+     margin-top: 10px;
+     margin-left: 10px;
+     margin-right: 10px;
+     height: 100px; 
+     /*width: 145px;*/
+     text-align: center;
+     font: normal 2.0vw boogalooregular !important;
+     color: #ECECEC;
+     border-radius: 4px;
+  }
+}
 
-.list-group-item{
-   margin-top: 10px;
-   margin-left: 10px;
-   margin-right: 10px;
-   height: 100px; 
-   width: 145px;
-   text-align: center;
-   font: normal 30px boogalooregular !important;
-   color: #ECECEC;
-   border-radius: 4px;
+@media (max-width: 1024px) {
+  .list-group-item{
+     width: 145px;
+     margin-top: 10px;
+     margin-left: 10px;
+     margin-right: 10px;
+     height: 90px; 
+     width: 100px;
+     text-align: center;
+     font: normal 1.9vw boogalooregular !important;
+     color: #ECECEC;
+     border-radius: 4px;
+  }
 }
 
 a.list-group-item, button.list-group-item {
     color: #ECECEC;
 }
 
-/*@media (min-width: 768px) {
-  .list-group-item{
-     width: 145px;
-     margin-top: 10px;
-     margin-left: 10px;
-     margin-right: 10px;
-     height: 100px; 
-     text-align: center;
-     font: normal 30px boogalooregular !important;
-     color: #ECECEC;
-     border-radius: 4px;
-  }
-}
-*/
 .list-group-item.removed {
   opacity: 0.4;
   color: #000000;
