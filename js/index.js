@@ -82,7 +82,6 @@ function mulligan(e){
       // Remove faction from factions
       dealt_factions.splice(index, 1);
   }
-  console.log(dealt_factions);
 };
 
 $(document).ready(function(){
